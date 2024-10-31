@@ -1,0 +1,27 @@
+Insertion Sort Aşamaları
+Dizi: [22, 27, 16, 2, 18, 6]
+
+Insertion Sort adımlarını yazalım:
+
+1. Adım: [22, 27, 16, 2, 18, 6] – İlk eleman sabit kabul edilir.
+2. Adım: [22, 27, 16, 2, 18, 6] – 27, 22'den büyük olduğu için yer değişmez.
+3. Adım: [16, 22, 27, 2, 18, 6] – 16, 27 ve 22’den küçük olduğu için en başa geçer.
+4. Adım: [2, 16, 22, 27, 18, 6] – 2, tüm elemanlardan küçük olduğu için en başa geçer.
+5. Adım: [2, 16, 18, 22, 27, 6] – 18, 22’den küçük olduğu için sırasını alır.
+6. Adım: [2, 6, 16, 18, 22, 27] – 6, sırasıyla 16, 18, 22, ve 27’den küçük olduğu için doğru konuma yerleşir.
+Sonuç: [2, 6, 16, 18, 22, 27]
+
+Big-O Gösterimi
+Insertion Sort’un en kötü durum zaman karmaşıklığı: O(n²)
+
+Time Complexity - 18 Sayısının Kapsamı
+Dizi sıralandıktan sonra [2, 6, 16, 18, 22, 27] olur ve 18 ortada kalır. Bu durumda Average Case kapsamına girer.
+
+Selection Sort İlk 4 Adım (Dizi: [7, 3, 5, 8, 2, 9, 4, 15, 6])
+Selection Sort’a göre her adımda en küçük eleman seçilerek ilk sıralanmamış eleman ile yer değiştirilir.
+
+1. Adım: [2, 3, 5, 8, 7, 9, 4, 15, 6] – En küçük eleman 2; 7 ile yer değiştirildi.
+2. Adım: [2, 3, 5, 8, 7, 9, 4, 15, 6] – 3 zaten doğru konumda.
+3. Adım: [2, 3, 4, 8, 7, 9, 5, 15, 6] – En küçük eleman 4; 5 ile yer değiştirildi.
+4. Adım: [2, 3, 4, 5, 7, 9, 8, 15, 6] – En küçük eleman 5; 8 ile yer değiştirildi.
+Sonuç: İlk 4 adım tamamlandığında dizi [2, 3, 4, 5, 7, 9, 8, 15, 6] şeklinde olur.
