@@ -1,0 +1,35 @@
+Binary Search Tree (BST) oluştururken, kök (root) düğümünden başlayarak her eleman yerleştirilir. Küçük değerler sola, büyük değerler sağa yerleştirilir.
+
+Verilen dizi: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+
+Binary Search Tree Aşamaları
+Root: 7 (İlk eleman root olarak seçilir)
+5: 5, 7’den küçük olduğu için root'un soluna yerleştirilir.
+1: 1, 7’den ve 5’ten küçük olduğu için 5’in soluna yerleştirilir.
+8: 8, 7’den büyük olduğu için root'un sağına yerleştirilir.
+3: 3, 7’den ve 5’ten küçük, ancak 1’den büyük olduğu için 1’in sağına yerleştirilir.
+6: 6, 7’den küçük, ancak 5’ten büyük olduğu için 5’in sağına yerleştirilir.
+0: 0, tüm elemanlardan küçük olduğu için 1’in soluna yerleştirilir.
+9: 9, tüm elemanlardan büyük olduğu için 8’in sağına yerleştirilir.
+4: 4, 7’den ve 5’ten küçük, ancak 1 ve 3’ten büyük olduğu için 3’ün sağına yerleştirilir.
+2: 2, 7’den ve 5’ten küçük, ancak 1’den büyük olduğu için 3’ün soluna yerleştirilir.
+Sonuç
+Aşağıdaki gibi bir Binary Search Tree oluşur:
+
+        7
+       / \
+      5   8
+     / \   \
+    1   6   9
+   / \
+  0   3
+     / \
+    2   4
+BST yapısında:
+
+Root: 7
+Root'un solunda 5, sağında 8
+5'in solunda 1, sağında 6
+1'in solunda 0, sağında 3
+3'ün solunda 2, sağında 4
+8'in sağında 9
