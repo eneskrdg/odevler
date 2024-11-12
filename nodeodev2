@@ -1,0 +1,38 @@
+const articles = [
+  {
+    title: "Arayüz Geliştirmenin İnce Yolu",
+    writer: "Ahmet Yılmaz",
+    datePublished: "3 months ago",
+  },
+  {
+    title: "010010000110000101100100011010010111001001100101",
+    writer: "Unknown",
+    datePublished: "Long Time Ago...",
+  },
+];
+
+const listArticles = () => {
+  articles.map((article) => console.log(article.title));
+};
+
+const addArticle = (newArticle) => {
+  return new Promise((resolve, reject) => {
+    articles.push(newArticle);
+    resolve(articles);
+  });
+};
+
+async function getArticles() {
+  try {
+    await addArticle({
+      title: "Bayağı Bir Çabaladım, Sonunda Oldu!",
+      writer: "Yazar Belirsiz",
+      datePublished: "Moments ago...",
+    });
+    listArticles();
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+getArticles();
