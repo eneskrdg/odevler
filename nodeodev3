@@ -1,0 +1,22 @@
+// circle.js
+const circleArea = (radius) => {
+  return Math.PI * radius * radius;
+};
+
+const circleCircumference = (radius) => {
+  return 2 * Math.PI * radius;
+};
+
+module.exports = {
+  circleArea,
+  circleCircumference,
+};
+
+
+
+/ index.js
+const { circleArea, circleCircumference } = require('./circle');
+
+const radius = 5;
+console.log(`Daire Alanı (r = ${radius}):`, circleArea(radius));
+console.log(`Daire Çevresi (r = ${radius}):`, circleCircumference(radius));
